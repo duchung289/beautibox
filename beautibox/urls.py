@@ -20,5 +20,6 @@ from danhmucsanpham import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.IndexClass.as_view(), name = 'index'),
     path('danhmucsanpham/',include('danhmucsanpham.urls')),
 ]
